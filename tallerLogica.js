@@ -1,16 +1,16 @@
-
-const prompt = require('prompt-sync')();;
 let numeros = [];
-
 function llenarLista() {
+    let repetidos=false;
+    numeros=[document.getElementById("numero1").value,document.getElementById("numero2").value,document.getElementById("numero3").value];
     for (let i = 0; i < 3; i++) {
-        console.log("Escriba su número " + (i + 1) + ":");
-        numeros[i] = prompt();
         for(let y=0; y<i;y++){
             if(numeros[y]==numeros[i]){
-                console.log("Hay números repetidos");
+                repetidos=true;
             }
         }
+    }
+    if(repetidos==true){
+        alert("Hay números repetidos");
     }
     return numeros;
 }
@@ -21,11 +21,8 @@ function clasificarNumeros(lista) {
     for(let i=0;i<lista.length;i++){
 
     }
-    console.log("El número mayor es: "+lista[0]);
-    console.log("El número medio es: "+lista[1]);
-    console.log("El número menor es: "+lista[2]);
+    document.getElementById("resultado").innerHTML =
+                "El número mayor es: "+lista[0]+"<br>" +
+                "El número medio es: "+lista[1] + "<br>" +
+                "El número menor es: "+lista[2];
 }
-
-clasificarNumeros(llenarLista());
-
-

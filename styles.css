@@ -1,0 +1,80 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #f0e6ff);
+    color: #59445f;
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(180, 140, 190, 0.18);
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8c6595;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    margin-bottom: 20px;
+    border: 1px solid #e8cfe9;
+    background-color: #fff9fc;
+    color: #59445f;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Foco cuando se selecciona un input */
+input:focus {
+    border-color: #c49bd6;
+    background-color: #ffffff;
+    box-shadow: 0 0 7px rgba(196, 155, 214, 0.3);
+}
+
+button {
+    margin-top: 18px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #e9a9c8, #c9a7e8);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#resultado {
+    background-color: white;
+    padding: 18px 25px;
+    width: 330px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(180, 140, 190, 0.15);
+    color: #795583;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
